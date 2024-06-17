@@ -1,4 +1,4 @@
-import 'package:admin_panel/src/screen/main_screen.dart';
+import 'package:admin_panel/features/main_screen/screen/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,7 +8,7 @@ class AppRouter {
   final router = GoRouter(
     routes: [
       GoRoute(
-        path: 'main',
+        path: '/',
         builder: (context, state) => const MainScreen(),
       )
     ],
