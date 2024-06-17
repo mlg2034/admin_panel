@@ -1,5 +1,5 @@
-import 'package:admin_panel/core/routing/router.dart';
-import 'package:admin_panel/src/screen/main_screen.dart';
+import 'package:admin_panel/core/shared/routing/router.dart';
+import 'package:admin_panel/src/ui/theme/custom_theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,13 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final router= AppRouter(context: context).router;
+    final router = AppRouter(context: context).router;
     return MaterialApp.router(
       routerConfig: router,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        useMaterial3: false,
-      ),
+      theme: CustomThemeData().themeData,
     );
   }
 }
