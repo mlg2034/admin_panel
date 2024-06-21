@@ -5,18 +5,8 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          children: [],
-        ),
-      ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 16),
-        child: Column(
-          children: [Text('Main Screen')],
-        ),
-      ),
+    return const Column(
+      children: [Text('Main Screen')],
     );
   }
 }

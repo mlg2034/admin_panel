@@ -1,19 +1,27 @@
 import 'package:admin_panel/src/ui/theme/color_theme.dart';
+import 'package:admin_panel/src/ui/theme/colors_sheme.dart';
 import 'package:admin_panel/src/ui/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class CustomThemeData {
-  ThemeData get themeData {
+  static final Color _lightFocusColor = Colors.black.withOpacity(0.12);
+  static final Color _darkFocusColor = Colors.white.withOpacity(0.12);
+  static ThemeData lightThemeData =
+      themeData(CustomColorSheme.lightColorScheme, _lightFocusColor);
+  static ThemeData darkThemeData =
+      themeData(CustomColorSheme.darkColorScheme, _darkFocusColor);
+  static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
     return ThemeData(
-      primaryColor: CustomThemeColor.primaryColor,
-      scaffoldBackgroundColor: CustomThemeColor.backgroundColor,
+      colorScheme: colorScheme,
+      canvasColor: colorScheme.surface,
+      scaffoldBackgroundColor: colorScheme.surface,
+      highlightColor: Colors.transparent,
+      focusColor: focusColor,
       cardColor: Colors.white,
       appBarTheme: const AppBarTheme(
-        color: CustomThemeColor.primaryColor,
         elevation: 0,
       ),
       buttonTheme: const ButtonThemeData(
-        buttonColor: CustomThemeColor.primaryColor,
         textTheme: ButtonTextTheme.primary,
       ),
       inputDecorationTheme: InputDecorationTheme(
