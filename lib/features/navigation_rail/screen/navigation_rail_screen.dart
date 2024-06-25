@@ -63,26 +63,29 @@ class _NavigationRailScreenState extends State<NavigationRailScreen> {
             Expanded(
               child: AnimatedSwitcher(
                 duration: const Duration(milliseconds: 300),
-                child: Builder(
-                  builder: (context) {
-                    switch (_selectedIndex) {
-                      case 0:
-                        return const KeyedSubtree(
-                            key: ValueKey<int>(0), child: MainScreen());
-                      case 1:
-                        return const KeyedSubtree(
-                            key: ValueKey<int>(1), child: UsersScreen());
-                      case 2:
-                        return const KeyedSubtree(
-                            key: ValueKey<int>(2), child: NotificationScreen());
-                      case 3:
-                        return const KeyedSubtree(
-                            key: ValueKey<int>(3), child: SettingsScreen());
-                      default:
-                        return const KeyedSubtree(
-                            key: ValueKey<int>(0), child: MainScreen());
-                    }
-                  },
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24 , vertical: 20),
+                  child: Builder(
+                    builder: (context) {
+                      switch (_selectedIndex) {
+                        case 0:
+                          return const KeyedSubtree(
+                              key: ValueKey<int>(0), child: MainScreen());
+                        case 1:
+                          return const KeyedSubtree(
+                              key: ValueKey<int>(1), child: UsersScreen());
+                        case 2:
+                          return const KeyedSubtree(
+                              key: ValueKey<int>(2), child: NotificationScreen());
+                        case 3:
+                          return const KeyedSubtree(
+                              key: ValueKey<int>(3), child: SettingsScreen());
+                        default:
+                          return const KeyedSubtree(
+                              key: ValueKey<int>(0), child: MainScreen());
+                      }
+                    },
+                  ),
                 ),
               ),
             ),

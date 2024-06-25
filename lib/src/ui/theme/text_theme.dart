@@ -1,4 +1,3 @@
-import 'package:admin_panel/src/ui/theme/color_theme.dart';
 import 'package:flutter/material.dart';
 
 
@@ -13,38 +12,32 @@ class CustomTextTheme {
   CustomTextTheme({
     this.labelLarge = const TextStyle(
       fontSize: 32.0,
-      fontWeight: FontWeight.bold,
-      color: CustomThemeColor.primaryColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
     this.labelMedium = const TextStyle(
       fontSize: 24.0,
-      fontWeight: FontWeight.bold,
-      color: CustomThemeColor.secondaryColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
     this.labelSmall = const TextStyle(
       fontSize: 16.0,
-      fontWeight: FontWeight.normal,
-      color: CustomThemeColor.textColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
     this.displayLarge = const TextStyle(
       fontSize: 42.0,
-      fontWeight: FontWeight.bold,
-      color: CustomThemeColor.primaryColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
     this.displayMedium = const TextStyle(
       fontSize: 36.0,
-      fontWeight: FontWeight.bold,
-      color: CustomThemeColor.secondaryColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
     this.displaySmall = const TextStyle(
       fontSize: 28.0,
-      fontWeight: FontWeight.bold,
-      color: CustomThemeColor.textColor,
+      fontWeight: FontWeight.w700,
       fontFamily: 'Righteous',
     ),
   });

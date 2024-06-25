@@ -12,6 +12,7 @@ class CustomThemeData {
       themeData(CustomColorSheme.darkColorScheme, _darkFocusColor);
   static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
     return ThemeData(
+    
       colorScheme: colorScheme,
       canvasColor: colorScheme.surface,
       scaffoldBackgroundColor: colorScheme.surface,
@@ -29,6 +30,7 @@ class CustomThemeData {
           borderRadius: BorderRadius.circular(8.0),
           borderSide: const BorderSide(color: CustomThemeColor.borderColor),
         ),
+        
       ),
       textTheme: TextTheme(
         labelLarge: CustomTextTheme().labelLarge,
